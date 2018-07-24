@@ -77,6 +77,12 @@
     <Compile Include="cBan.Designer.cs">
       <DependentUpon>cBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="fBep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBep.Designer.cs">
+      <DependentUpon>fBep.cs</DependentUpon>
+    </Compile>
     <Compile Include="fMoban.cs">
       <SubType>Form</SubType>
     </Compile>
