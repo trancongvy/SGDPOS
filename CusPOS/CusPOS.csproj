@@ -51,6 +51,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DataFactory">
+      <HintPath>..\DataFactory\bin\Debug\DataFactory.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v11.1, Version=11.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -83,6 +86,18 @@
     <Compile Include="fBep.Designer.cs">
       <DependentUpon>fBep.cs</DependentUpon>
     </Compile>
+    <Compile Include="fChonKV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChonKV.Designer.cs">
+      <DependentUpon>fChonKV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fFastFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fFastFood.Designer.cs">
+      <DependentUpon>fFastFood.cs</DependentUpon>
+    </Compile>
     <Compile Include="fMoban.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +116,12 @@
     <Compile Include="fThanhtoan.Designer.cs">
       <DependentUpon>fThanhtoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="iBep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="iBep.Designer.cs">
+      <DependentUpon>iBep.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -112,6 +133,16 @@
     <EmbeddedResource Include="cBan.resx">
       <SubType>Designer</SubType>
       <DependentUpon>cBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBep.resx">
+      <DependentUpon>fBep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fChonKV.resx">
+      <DependentUpon>fChonKV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fFastFood.resx">
+      <DependentUpon>fFastFood.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="fMoban.resx">
       <SubType>Designer</SubType>
@@ -125,6 +156,9 @@
       <SubType>Designer</SubType>
       <DependentUpon>fThanhtoan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="iBep.resx">
+      <DependentUpon>iBep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <SubType>Designer</SubType>
@@ -133,6 +167,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CDTControl\CDTControl.csproj">
+      <Project>{8eeecdac-1392-4262-a698-b5be74adcf72}</Project>
+      <Name>CDTControl</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CDTDatabase\CDTDatabase.csproj">
       <Project>{9bbdb6c7-70f8-4805-bb51-445551e282c5}</Project>
       <Name>CDTDatabase</Name>
@@ -141,6 +179,10 @@
       <Project>{cf282973-8899-4c28-8286-71155cbe9c3a}</Project>
       <Name>CDTLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DevControls\DevControls.csproj">
+      <Project>{4983AC7A-6DF3-4F84-951F-5589B56C4AC5}</Project>
+      <Name>DevControls</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -148,6 +190,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
